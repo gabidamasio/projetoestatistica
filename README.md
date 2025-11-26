@@ -1,5 +1,4 @@
 
-````markdown
 # E-commerce Analysis
 
 Este projeto realiza uma **análise exploratória e estatística** de dados de um e-commerce brasileiro, com foco em KPIs como receita, frete, ticket médio, atraso de entregas e comportamento do cliente. O objetivo é gerar insights acionáveis para o negócio, utilizando **Python, Pandas, Seaborn, Matplotlib e SQL**.
