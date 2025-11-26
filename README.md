@@ -1,3 +1,6 @@
+Perfeito! Aqui está um **README completo em Markdown**, tudo em um único texto, pronto para colocar no GitHub:
+
+````markdown
 # E-commerce Analysis
 
 Este projeto realiza uma **análise exploratória e estatística** de dados de um e-commerce brasileiro, com foco em KPIs como receita, frete, ticket médio, atraso de entregas e comportamento do cliente. O objetivo é gerar insights acionáveis para o negócio, utilizando **Python, Pandas, Seaborn, Matplotlib e SQL**.
@@ -12,9 +15,13 @@ Instale as dependências utilizando:
 
 ```bash
 pip install -r requirements.txt
+````
+
+---
 
 ## 2. Estrutura do projeto
 
+```
 ecommerce_analysis/
 │
 ├── data/                   # Dados do projeto
@@ -40,8 +47,7 @@ ecommerce_analysis/
 │
 ├── README.md               # Documentação do projeto
 └── requirements.txt        # Dependências Python para reprodutibilidade
-
-
+```
 
 ---
 
@@ -49,6 +55,7 @@ ecommerce_analysis/
 
 1. Coloque os arquivos CSV originais em `data/raw/e-commerce_projeto_est/`.
 2. Execute os notebooks em `notebooks/` para:
+
    * Limpeza e preparação dos dados
    * Engenharia de features
    * Análise exploratória (EDA)
@@ -74,3 +81,9 @@ ecommerce_analysis/
 * Todas as análises são replicáveis através do notebook Python e das queries SQL.
 * Pastas `outputs/` e `processed/` não devem ser versionadas no Git se forem muito grandes, use `.gitignore`.
 
+```
+
+Se você quiser, posso também criar uma **versão com badges de GitHub, Python e tamanho do projeto**, para deixar o README mais profissional e visualmente atrativo no GitHub.  
+
+Quer que eu faça isso também?
+```
