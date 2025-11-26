@@ -78,10 +78,3 @@ ecommerce_analysis/
 
 * Todas as análises são replicáveis através do notebook Python e das queries SQL.
 * Pastas `outputs/` e `processed/` não devem ser versionadas no Git se forem muito grandes, use `.gitignore`.
-
-```
-
-Se você quiser, posso também criar uma **versão com badges de GitHub, Python e tamanho do projeto**, para deixar o README mais profissional e visualmente atrativo no GitHub.  
-
-Quer que eu faça isso também?
-```
