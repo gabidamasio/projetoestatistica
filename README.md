@@ -1,4 +1,3 @@
-Perfeito! Aqui está um **README completo em Markdown**, tudo em um único texto, pronto para colocar no GitHub:
 
 ````markdown
 # E-commerce Analysis
