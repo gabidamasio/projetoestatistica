@@ -1,0 +1,4 @@
+coluna,total_outliers,pct_outliers,limite_inferior,limite_superior
+product_price,18,0.9625668449197861,769.9,769.9
+delivery_lead_time,0,0.0,-61.0,123.0
+discount_abs,175,9.358288770053475,-262.84381875,472.39893125000003

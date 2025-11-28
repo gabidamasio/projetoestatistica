@@ -7,9 +7,9 @@ venv/
 .env
 
 # Data / outputs pesados
-data/raw/
-data/processed/
-outputs/
+# data/raw/
+# data/processed/
+# outputs/
 
 # Notebooks checkpoints
 .ipynb_checkpoints/
