@@ -11,6 +11,9 @@ def plot_histograms_and_boxplots(df):
     """
     Plota histogramas e boxplots para colunas numéricas específicas.
     Colunas: product_price, delivery_lead_time, discount_abs
+    Além disso, adiciona:
+    - Boxenplot para discount_abs
+    - Elasticidade de discount_abs x product_price
     """
     numeric_cols = ['product_price', 'delivery_lead_time', 'discount_abs']
     colors = {
@@ -37,3 +40,26 @@ def plot_histograms_and_boxplots(df):
         plt.tight_layout()
         plt.savefig(os.path.join(FIGURES_DIR, f"boxplot_{col}.png"))
         plt.close()
+
+    # =========================
+    # Boxenplot de discount_abs
+    # =========================
+    plt.figure(figsize=(12, 6))
+    sns.boxenplot(x='discount_abs', data=df, color='orange')
+    plt.title("Boxenplot de discount_abs")
+    plt.tight_layout()
+    plt.savefig(os.path.join(FIGURES_DIR, "boxenplot_discount_abs.png"))
+    plt.close()
+
+    # =========================
+    # Elasticidade discount_abs x product_price
+    # =========================
+    plt.figure(figsize=(12, 6))
+    sns.scatterplot(x='discount_abs', y='product_price', data=df, alpha=0.6)
+    sns.regplot(x='discount_abs', y='product_price', data=df, scatter=False, color='red', line_kws={'lw':2})
+    plt.title("Elasticidade: discount_abs x product_price")
+    plt.xlabel("Discount Absoluto")
+    plt.ylabel("Ticket Médio")
+    plt.tight_layout()
+    plt.savefig(os.path.join(FIGURES_DIR, "elasticidade_discount_ticket.png"))
+    plt.close()

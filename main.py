@@ -13,11 +13,17 @@ from stats.inference import compute_indicators_ci
 from stats.normality import check_and_plot_normality
 from stats.independence_tests import test_autocorrelation
 
+# Função de inspeção
+from notebooks.inspection import inspect_dataset
+
 
 def main():
 
     # 1. Carregar dados
     df = load_csv()
+
+    # 1.1 Inspecionar dataset
+    inspect_dataset(df)
 
     # 2. Feature Engineering
     df = apply_feature_engineering(df)
