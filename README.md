@@ -17,34 +17,32 @@ pip install -r requirements.txt
 
 ---
 
-## 2. Estrutura do projeto
+## 2. Estrutura do Projeto `ecommerce_analysis`
 
-```
+```text
 ecommerce_analysis/
-│
-├── data/                   # Dados do projeto
-│   ├── raw/                # Dados originais (não processados)
-│   │   └── e-commerce_projeto_est/
-│   │       ├── DIM_Customer.csv
-│   │       ├── DIM_Delivery.csv
-│   │       ├── DIM_Products.csv
-│   │       ├── DIM_Shopping.csv
-│   │       └── FACT_Orders.csv
-│   │
-│   └── processed/          # Dados processados / Golden view
-│       └── vw_gold_orders/
-│           └── vw_gold_orders.csv
-│
-├── notebooks/              # Notebooks do projeto (exploração, análise)
-│
-├── outputs/                # Resultados do projeto
-│   ├── figures/            # Gráficos gerados (EDA, séries temporais, heatmaps)
-│   └── tables/             # Tabelas de KPIs ou sumarizações
-│
-├── sql/                    # Queries SQL utilizadas para preparar dados
-│
-├── README.md               # Documentação do projeto
-└── requirements.txt        # Dependências Python para reprodutibilidade
+├── config/                     # Configurações gerais, como paths, constantes, etc.
+├── data/                       # Módulos para manipulação e transformação de dados
+│   ├── __init__.py
+│   ├── feature_engineering.py  # Funções para criar features derivadas
+│   ├── load_data.py            # Função para carregar CSVs ou outras fontes
+│   ├── processed/              # Armazena dados processados pelo pipeline
+│   ├── raw/                    # Dados brutos originais
+│   └── __pycache__/            # Cache do Python
+├── notebooks/                  # Funções de análise exploratória e gráficos
+├── outputs/                    # Resultados do pipeline
+│   ├── figures/                # Gráficos gerados pelo pipeline
+│   └── tables/                 # Tabelas geradas pelo pipeline
+├── sql/                        # Scripts SQL ou consultas
+├── stats/                      # Funções estatísticas
+│   ├── inference.py            # Cálculo de IC, médias e proporções
+│   ├── normality.py            # Testes e gráficos de normalidade
+│   └── independence_tests.py   # Testes de autocorrelação, independência, etc.
+├── venv/                       # Ambiente virtual Python
+├── .gitignore                   # Arquivos e pastas ignoradas pelo Git
+├── main.py                      # Script principal do pipeline
+├── README.md                    # Documentação do projeto
+└── requirements.txt             # Dependências do projeto
 ```
 
 ---
