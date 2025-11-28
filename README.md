@@ -75,4 +75,3 @@ ecommerce_analysis/
 ## 5. Observações
 
 * Todas as análises são replicáveis através do notebook Python e das queries SQL.
-* Pastas `outputs/` e `processed/` não devem ser versionadas no Git se forem muito grandes, use `.gitignore`.
